@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +19,26 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+header {
+  background: #3498DB;
+  min-height: 35rem;
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding-left: 1rem;
+  text-indent: -0.7rem;
+}
+
+li::before {
+  content: "💧 ";
 }
