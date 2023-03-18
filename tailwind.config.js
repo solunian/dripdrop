@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'water': '#3498DB',
+        'darkwater': '#1a689c',
+      },
       fontFamily: {
         'edu': ['Edu VIC WA NT Beginner', 'cursive'],
         'lato': ['Lato', 'sans-serif'],
@@ -13,4 +17,5 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: 'class',
 }

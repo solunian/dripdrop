@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Counter from '../components/counter';
+import LightDarkButton from '../components/lightbutton';
+import GitHubButton from '../components/githubbutton';
 
 import Drip from '../components/drip';
 import PageLink from '../components/link';
@@ -16,8 +18,12 @@ export default function Home() {
       </Head>
 
 
-      <header className='select-none'>
-        <div className='flex flex-row justify-center pt-40'>
+      <header className='select-none bg-water dark:bg-darkwater'>
+        <div className='flex flex-row justify-end gap-6 pt-5 pr-6'>
+          <LightDarkButton/>
+          <GitHubButton/>
+        </div>
+        <div className='flex flex-row justify-center pt-20'>
           <div className='flex flex-col text-center'>
             <Image src='/bottle.svg' width={300} height={200} className='-rotate-45' alt="water bottle" draggable={false} />
             <h1 className='font-edu font-bold text-5xl'>dripdrop</h1>
@@ -27,7 +33,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className='flex flex-row justify-center font-lato text-lg pt-20'>
+      <main className='flex flex-row justify-center font-lato text-lg pt-20 dark:bg-slate-800 dark:text-gray-300'>
         <div className='flex flex-col gap-4 max-w-screen-sm px-4'>
 
           <h1 className='font-bold text-4xl pb-4 block text-center'>
@@ -85,7 +91,7 @@ export default function Home() {
               was pretty frustrating because the `useChain` hook would not work, and all the animations would run
               simultaneously, and it was a huge mess. Oh... I forgot about dealing with the water bottle svg... that was a
               rollercoaster. <PageLink href="https://vercel.com/">Vercel</PageLink> is pretty nice when it comes to deploy projects like this. Very cool!
-              Some maxims that have held up over this project: Taylor {"Swift's"} chill albums are a vibe, sleep is important,
+              Some maxims that have held up over this project: some K-pop songs are crazy fire, sleep is important,
               do not be coding late into the night, procrastination is bad, web development is hard.
               But at least, I finished this in less than 12 hours of work. Yay. {"🔥 🔥 🔥"}
 
@@ -107,12 +113,12 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className='flex flex-row justify-center content-center w-full h-28 p-6 bg-gray-100 border text-gray-600'>
+      <footer className='flex flex-row justify-center content-center w-full h-28 p-6 bg-gray-100 border text-gray-600 dark:bg-gray-900 dark:text-gray-500 dark:border-gray-900'>
         <div className='flex flex-col gap-4'>
           <div className='flex flex-row text-center justify-around gap-8'>
             <PageLink href="https://github.com/solunian/dripdrop">github</PageLink>
             <PageLink href="https://github.com/solunian/dripdrop/blob/main/LICENSE">license</PageLink>
-            <PageLink href="https://open.spotify.com/track/5kI4eCXXzyuIUXjQra0Cxi?si=fc854e06c4c6440b">a good song</PageLink>
+            <PageLink href="https://open.spotify.com/track/1XkMxUilV0E3ChDERZJUEq?si=f27ac47d9fbf41cd">a good song</PageLink>
           </div>
 
           <div className='text-center'>

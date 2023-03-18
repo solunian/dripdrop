@@ -22,11 +22,9 @@ a {
 }
 
 header {
-  background: #3498DB;
   min-height: 35rem;
+  width: 100%;
 }
-
-
 
 ul {
   list-style: none;
